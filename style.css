@@ -1,0 +1,170 @@
+body{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto Mono', monospace;  
+}
+
+a {
+    color: #66BFBF;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    transition: 1s;
+    padding: 1px 1px;
+    font-size: 16px;
+    z-index: 1000000; /* Set a higher z-index to keep the header above other elements */
+}
+
+header.sticky {
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(204, 203, 203, 0.5);
+    background-color: #EAF6F6;
+}
+
+header a {
+    margin-left: 30px;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+}
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Remove the default list-style (bullets) */
+    padding: 0; /* Remove any default padding */
+}
+
+header li {
+    padding-right: 60px; /* Add some right margin to create space between items */
+}
+
+
+header li {
+    position: relative;
+    letter-spacing:3px;
+    display:table;
+    margin:40px auto;
+    cursor:pointer;
+    transition:.6s;
+  }
+  header li:before,
+  header li:after {
+    content:attr(data-text);
+    transition:.6s;
+  }
+  header li:before {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index:-1;
+    text-shadow:
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px;
+    -webkit-mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+            mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+  }
+  header li:hover {
+    transform:translate(-10px,-10px);
+  }  
+  header li:hover:before {
+    text-shadow:
+     1px 1px,
+     2px 2px,
+     3px 3px,
+     4px 4px,
+     5px 5px,
+     6px 6px,
+     7px 7px,
+     8px 8px,
+     9px 9px,
+     10px 10px;
+  }
+
+
+
+
+.cover-page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.special-text {
+    color: #EF6262;
+}
+
+.cover-page h1{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+}
+
+.cover-page p{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+
+.my-avatar{
+    display: flex;
+    justify-content: center;
+}
+
+.my-avatar img{
+    height: 450px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.about-me{
+    display: flex;
+    justify-content: center;
+}
+
+.about-me, .ipl, .tutor{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.experience-pic{
+    max-width: 70%;
+}
+
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+footer{
+    text-align: center;
+    font-size: 12px;
+}
