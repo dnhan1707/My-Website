@@ -75,8 +75,8 @@ header ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none; /* Remove the default list-style (bullets) */
-    padding: 0; /* Remove any default padding */
+    list-style: none;
+    padding: 0; 
 }
 
 header li {
@@ -132,8 +132,6 @@ header li {
      9px 9px,
      10px 10px;
   }
-
-
 
 
 .cover-page {
