@@ -143,6 +143,11 @@ header li {
     color: #EF6262;
 }
 
+.special-text-projects {
+    font-weight: bold;
+    color: #EF6262;
+}
+
 .cover-page h1{
     display: block;
     width: 100%;
