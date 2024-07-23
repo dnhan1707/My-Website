@@ -4,7 +4,6 @@ body{
 }
 
 
-
 /* svg {
     position: fixed;
     top: 0;
@@ -205,3 +204,22 @@ footer{
     text-align: center;
     font-size: 12px;
 }
+
+
+.nav-link {
+    color: black;
+}
+
+.nav-link.active, .nav-link:active, .nav-link:focus, .nav-link:hover {
+    color: black;
+}
+
+.nav-link:focus {
+    outline: none; /* Remove the default outline on focus */
+  }
+
+.project {
+    color: white;
+    background-color: #DC6C3A;
+}
+
