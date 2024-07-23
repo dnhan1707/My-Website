@@ -231,3 +231,8 @@ ul li .descr::before {
 /* .title {
   font-weight: bold;
 } */
+
+.icon{
+  width: 30px;
+  height: 30px;
+}

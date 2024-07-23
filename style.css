@@ -227,3 +227,22 @@ footer{
         font-size: 10px;
     }
 }
+
+.dropdown-item {
+    font-size: 15px; /* Adjust as needed */
+}
+/* Custom styles for dropdown links */
+.linkedin-link {
+    color: #005682; /* LinkedIn blue color */
+  }
+  
+.email-link {
+    color: black; /* Email red color */
+  }
+  
+/* Hover effects if needed */
+.linkedin-link:hover, .email-link:hover {
+text-decoration: underline; /* Example hover effect */
+color: #005682; /* Darker shade for LinkedIn */
+color: #b73122; /* Darker shade for Email */
+}
