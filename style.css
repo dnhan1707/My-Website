@@ -42,14 +42,14 @@ a {
 
 header {
     position: fixed;
-    display: flex;
+    /* display: flex; */
     left: 0;
     top: 0;
-    width: 100%;
-    justify-content: space-around;
+    width: 100vh;
+    justify-content: center;
     align-items: center;
-    transition: 1s;
-    padding: 1px 1px;
+    /* transition: 1s; */
+    /* padding: 1px 1px; */
     font-size: 16px;
     z-index: 1000000; /* Set a higher z-index to keep the header above other elements */
 }
@@ -89,49 +89,9 @@ header li {
     display:table;
     margin:40px auto;
     cursor:pointer;
-    transition:.6s;
+    /* transition:.1s; */
   }
-  header li:before,
-  header li:after {
-    content:attr(data-text);
-    transition:.6s;
-  }
-  header li:before {
-    left: 0;
-    top: 0;
-    position: absolute;
-    z-index:-1;
-    text-shadow:
-     0px 0px,
-     0px 0px,
-     0px 0px,
-     0px 0px,
-     0px 0px,
-     0px 0px,
-     0px 0px,
-     0px 0px,
-     0px 0px,
-     0px 0px;
-    -webkit-mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
-            mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
-  }
-  header li:hover {
-    transform:translate(-10px,-10px);
-  }  
-  header li:hover:before {
-    text-shadow:
-     1px 1px,
-     2px 2px,
-     3px 3px,
-     4px 4px,
-     5px 5px,
-     6px 6px,
-     7px 7px,
-     8px 8px,
-     9px 9px,
-     10px 10px;
-  }
-
+  
 
 .cover-page {
     width: 100%;
@@ -245,4 +205,30 @@ footer{
 text-decoration: underline; /* Example hover effect */
 color: #005682; /* Darker shade for LinkedIn */
 color: #b73122; /* Darker shade for Email */
+}
+
+
+@media (max-width: 500px) {
+    .nav-item{
+        font-size: 10px;
+    }
+
+    .project{
+        font-size: 10px;
+    }
+
+    .connect{
+        font-size: 10px;
+    }
+
+    .dropdown-item {
+        padding: 0.5rem 1rem; /* Default padding */
+      }
+  
+      @media (max-width: 768px) {
+        .dropdown-item {
+          padding: 0.25rem 0.5rem; /* Reduced padding for smaller screens */
+          margin: 0; /* Remove margin */
+        }
+    }
 }
