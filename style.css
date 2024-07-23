@@ -222,4 +222,8 @@ footer{
     color: white;
     background-color: #DC6C3A;
 }
-
+@media (max-width: 600px) {
+    .name {
+        font-size: 10px;
+    }
+}
